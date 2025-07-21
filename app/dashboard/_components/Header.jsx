@@ -66,7 +66,7 @@ function Header() {
       </li>
       <li>
         <a 
-          href='/works'
+          href='/how-it-works'
           className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:bg-purple-50 hover:text-purple-700 ${
             path === '/works' 
               ? 'text-purple-700 bg-purple-50 shadow-sm' 
@@ -74,7 +74,7 @@ function Header() {
           }`}
         >
           How it works?
-          {path === '/works' && (
+          {path === '/how-it-works' && (
             <div className='absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-purple-600 rounded-full'></div>
           )}
         </a>
