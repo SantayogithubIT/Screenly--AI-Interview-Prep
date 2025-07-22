@@ -31,7 +31,7 @@ const InterviewList = () => {
 return (
   <div className="p-6 max-w-7xl mx-auto bg-gray-50 min-h-screen">
     <h2 className="text-3xl font-extrabold text-gray-900 mb-10 border-b-4 border-blue-600 pb-3">
-      Your Interviews
+      Test/Mock Interviews
     </h2>
     {interviews.length > 0 ? (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
