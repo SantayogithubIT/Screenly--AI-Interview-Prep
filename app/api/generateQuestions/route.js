@@ -5,7 +5,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function POST(request) {
-  const API_KEY = process.env.GEMINI_API_KEY;
+  const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
 
   if (!API_KEY) {
     return NextResponse.json(
