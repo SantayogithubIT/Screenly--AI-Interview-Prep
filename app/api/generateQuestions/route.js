@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 
 export async function POST(request) {
   // IMPORTANT: The API key is now only used on the server, keeping it secret.
-  const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY; // Use a non-public environment variable
+  const API_KEY = process.env.GEMINI_API_KEY; // Use a non-public environment variable
 
   if (!API_KEY) {
     return NextResponse.json(
