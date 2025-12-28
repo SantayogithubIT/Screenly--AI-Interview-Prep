@@ -24,7 +24,7 @@ export async function POST(request) {
     }
 
     const genAI = new GoogleGenerativeAI(API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
     const chat = model.startChat({ history: [] });
 
     const inputPrompt = `Act as a technical interviewer. Generate 5 interview questions for a ${jobPosition} role with ${jobExperience} years of experience, focusing on the following tech stack: ${jobDes}. Please provide the response as a single, raw JSON object without any markdown formatting. The JSON object must have a key named "interviewQuestions", which holds an array of objects. Each object in the array must have two keys: "question" and "answer".`;
